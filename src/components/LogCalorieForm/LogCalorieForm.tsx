@@ -4,6 +4,7 @@ import { v4 as uuid } from "uuid";
 import TextInput from "../TextInput";
 import NumberInput from "../NumberInput";
 import { CalorieLog } from "../../interfaces/Calorie";
+import { PrimaryButton } from "../PrimaryButton/PrimaryButton";
 
 interface LogCalorieFormProps {
   currentCalories: number;
@@ -41,18 +42,22 @@ export const LogCalorieForm: React.FC<LogCalorieFormProps> = (props) => {
   return (
     <>
       <form onSubmit={handleLogCalorieSubmit}>
-        <p>Log Food</p>
+        <h1 className="text-2xl font-semibold mb-2">Log Food</h1>
+
+        <label className="font-semibold text-sm">Food's name</label>
         <TextInput
           value={foodName}
           onChange={setFoodName}
+          placeholder="Enter the food's name"
         />
 
+        <label className="font-semibold text-sm mt-2">Food's calories</label>
         <NumberInput
           value={foodCalories}
           onChange={setFoodCalories}
         />
 
-        <button type="submit">Add</button>
+        <PrimaryButton type="submit">Add</PrimaryButton>
       </form>
     </>
   );
