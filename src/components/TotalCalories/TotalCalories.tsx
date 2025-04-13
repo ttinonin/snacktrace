@@ -13,7 +13,6 @@ export const TotalCalories: React.FC<TotalCaloriesProps> = (props) => {
     <div>
       <p>Calories: {props.currentCalories} / {props.targetCalories} kcal</p>
       <NumberInput
-        placeholder="Enter calories target"
         value={props.targetCalories}
         onChange={props.onTargetCaloriesChange}
       />

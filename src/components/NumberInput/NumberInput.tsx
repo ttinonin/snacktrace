@@ -1,7 +1,6 @@
 interface NumberInputProps {
   value: number;
   onChange: (newValue: number) => void;
-  placeholder: string;
 }
 
 export const NumberInput: React.FC<NumberInputProps> = (props) => {
@@ -15,7 +14,7 @@ export const NumberInput: React.FC<NumberInputProps> = (props) => {
 
   return (
     <>
-      <input type="number" placeholder={props.placeholder} value={props.value} onChange={handleChange}/>
+      <input type="number" value={props.value} onChange={handleChange}/>
     </>
   );
 };
