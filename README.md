@@ -24,7 +24,7 @@ SnackTrace is a simple and lightweight calorie tracking app built with React and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/snacktrace.git
+   git clone https://github.com/ttinonin/snacktrace.git
    cd snacktrace
    ```
 
