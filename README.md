@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🍿 SnackTrace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SnackTrace is a simple and lightweight calorie tracking app built with React and TypeScript. Set your daily calorie goal and log your snacks and meals with ease.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎯 Set a daily calorie target
+- 🍔 Log foods and track consumed calories
+- 📊 Instantly see how much you've eaten and how much is left
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🖥️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/snacktrace.git
+   cd snacktrace
+
+2. Download dependencies:
+  ```bash
+  npm i
+
+3. Run the development sever:
+  ```bash
+  npm run dev
+
+## 📸 Preview
+
+![](./assets/preview1.png)
+
+![](./assets/preview2.png)
+
+## 📦 Future Improvements
+
+- Persistent storage (localStorage or database)
+- Macronutrient breakdown (protein, carbs, fats)
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, create a new branch for your feature, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
