@@ -1,7 +1,6 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import NumberInput from "../NumberInput";
 
-import "./TotalCalories.css"
 
 interface TotalCaloriesProps {
   targetCalories: number;
@@ -31,11 +30,12 @@ export const TotalCalories: React.FC<TotalCaloriesProps> = (props) => {
         <ProgressBar completed={Math.round((props.currentCalories / props.targetCalories) * 100)}/>
       </div>
 
-
+      <label className="font-semibold mt-2 text-sm">Target Calories:</label>
       <NumberInput
         value={props.targetCalories}
         onChange={props.onTargetCaloriesChange}
       />
+
     </div>
   );
 };

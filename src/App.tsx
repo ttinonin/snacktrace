@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Modal from "react-modal";
 
 import food from "./assets/food.jpg";
 import TotalCalories from "./components/TotalCalories";
@@ -8,6 +9,8 @@ import { CalorieLog } from "./interfaces/Calorie";
 import CaloriesList from "./components/CaloriesList";
 import { PrimaryButton } from "./components/PrimaryButton/PrimaryButton";
 import Header from "./components/Header";
+
+Modal.setAppElement("#root")
 
 function App() {
   const [targetCalories, setTargetCalories] = useState<number>(1000);
